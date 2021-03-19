@@ -6,6 +6,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const CompressionPlugin = require('compression-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (isDev, buildEnv) => {
   let plugins = [
@@ -49,6 +50,26 @@ module.exports = (isDev, buildEnv) => {
         threshold: 10240,
         minRatio: 0,
       }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: './public/robots.txt',
+            to: './robots.txt'
+          },
+          {
+            from: './public/robots.staging.txt',
+            to: './robots.staging.txt'
+          },
+          {
+            from: './public/robots.production.txt',
+            to: './robots.production.txt'
+          },
+          {
+            from: './public/static',
+            to: './static'
+          }
+        ]
+      })
     ]);
   }
 
