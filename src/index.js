@@ -5,9 +5,9 @@ import { createBrowserHistory } from 'history';
 
 import App from '@/components/core/App';
 
-import '@/assets/styles/variables.css';
-import '@/assets/styles/fonts.css';
-import '@/assets/styles/globals.css';
+import './styles/common/variables.css';
+import './styles/common/fonts.css';
+import './styles/common/globals.css';
 
 const history = createBrowserHistory();
 
