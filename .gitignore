@@ -4,3 +4,5 @@
 /build
 yarn-error.log
 *.iml
+.DS_Store
+Thumbs.db
