@@ -19,7 +19,6 @@ module.exports = (env, argv) => {
     {
       entry: './src/index.js',
       output: {
-        path: '/build',
         filename: isDev ? 'app.[hash].js' : 'app.[contentHash].js',
       },
       devServer: {
