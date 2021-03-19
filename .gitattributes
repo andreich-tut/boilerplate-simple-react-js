@@ -1,0 +1,2 @@
+# automatically normalize all text files (convert CRLF to LF)
+*       text=auto

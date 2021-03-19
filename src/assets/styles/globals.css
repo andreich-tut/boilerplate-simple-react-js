@@ -1,0 +1,77 @@
+html,
+body {
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/* noinspection Stylelint */
+a,
+a:focus,
+a:active,
+div,
+div:focus,
+div:active,
+button,
+button:focus,
+button:active,
+ol,
+ol:focus,
+ol:active,
+li,
+li:focus,
+li:active,
+ul,
+ul:focus,
+ul:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  margin: 0;
+}
+
+/* noinspection Stylelint */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

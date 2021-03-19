@@ -1,0 +1,6 @@
+/.idea
+/.env
+/node_modules
+/build
+yarn-error.log
+*.iml
