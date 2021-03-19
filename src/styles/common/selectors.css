@@ -1,3 +1,1 @@
-.selector {
-  opacity: 1;
-}
+@custom-selector :--menu-opened .header__checkbox:checked + .header__container;

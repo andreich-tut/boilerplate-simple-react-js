@@ -1,14 +1,37 @@
+html {
+  height: 100%;
+}
+
 html,
 body {
-  height: 100vh;
-  max-height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
+body {
+  min-width: var(--min-body-width);
+  height: 100%;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 20px;
+  font-family: var(--font-family-text);
+  line-height: 1.4;
+  background-color: var(--color-bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (--medium-viewport) {
+    font-size: 18px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 a {
-  display: block;
-  color: inherit;
+  color: var(--color-link);
   text-decoration: none;
 }
 
@@ -62,7 +85,7 @@ textarea:active {
 }
 
 p {
-  margin: 0;
+  margin: 1.5em 0;
 }
 
 /* noinspection Stylelint */
@@ -74,4 +97,17 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+input::-ms-clear {
+  display: none;
 }

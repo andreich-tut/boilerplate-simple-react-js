@@ -1,0 +1,11 @@
+@custom-media --extra-large-viewport (max-width: 1400px);
+@custom-media --large-viewport (max-width: 1260px);
+@custom-media --medium-viewport (max-width: 1020px);
+@custom-media --small-viewport (max-width: 768px);
+@custom-media --smaller-viewport (max-width: 670px);
+@custom-media --extra-small-viewport (max-width: 370px);
+@custom-media --extra-small-height-desktop (max-height: 800px) and (min-width: 1021px);
+@custom-media --small-height-desktop (max-height: 860px) and (min-width: 1021px);
+/* @custom-media --small-height-desktop (max-height: 0) and (min-width: 1021px); */
+@custom-media --desktop (min-width: 1021px);
+@custom-media --modal (max-width: 768px);

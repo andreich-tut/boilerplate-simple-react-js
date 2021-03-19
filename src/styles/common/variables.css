@@ -1,3 +1,13 @@
 :root {
+  /* Fonts */
+  --font-family-text: 'YS Text', 'Open Sans', 'Helvetica Neue', arial, sans-serif;
+  --font-family-heading: 'William Text Pro', 'Times New Roman', times, serif;
 
+  /* Colors */
+  --color-text: #2b2b2b;
+  --color-link: #004f99;
+  --color-bg-body: #fff;
+
+  /* Sizes */
+  --min-body-width: 320px;
 }
