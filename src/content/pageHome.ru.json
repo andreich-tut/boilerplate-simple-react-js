@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Название проекта",
+    "description": "",
+    "keywords": ""
+  },
+  "fields": {
+    "hero": {
+      "heading": "Главная страница"
+    }
+  }
+}

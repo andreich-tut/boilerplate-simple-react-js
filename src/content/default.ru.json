@@ -1,0 +1,12 @@
+{
+  "seo": {
+    "title": "Название проекта",
+    "description": "",
+    "keywords": "",
+    "thumbnail": "social-share.png",
+    "metrikaID": 0
+  },
+  "error": {
+    "default": "Что-то пошло не так. Пожалуйста, перезагрузите страницу и попробуйте снова."
+  }
+}
