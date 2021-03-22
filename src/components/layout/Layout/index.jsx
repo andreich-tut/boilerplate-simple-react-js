@@ -1,9 +1,8 @@
 import React from 'react';
 import cn from 'classnames';
 import { Helmet } from 'react-helmet';
-import Counter from '../../common/Counter/Counter';
-
-import useContent from '../../../hooks/useContent.hook';
+import useContent from '@/hooks/useContent';
+import Counter from '@/components/common/Counter';
 
 const staging = process.env.REACT_APP_STAGING === 'true';
 

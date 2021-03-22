@@ -6,7 +6,7 @@ import IndexPage from '@/pages/IndexPage';
 const AppRouter = () => {
   return (
     <Switch>
-      <Route exact={true} path="/" component={IndexPage} />;
+      <Route path="/" component={IndexPage} exact={true} />;
     </Switch>
   );
 };

@@ -37,12 +37,8 @@ module.exports = (isDev) => {
     ],
   });
 
-  return {
-    module: {
-      rules: [
-        vendorStyles(mainCssLoader, isDev),
-        appStyles(mainCssLoader, isDev),
-      ],
-    },
-  };
+  return [
+    vendorStyles(mainCssLoader, isDev),
+    appStyles(mainCssLoader, isDev),
+  ];
 };
