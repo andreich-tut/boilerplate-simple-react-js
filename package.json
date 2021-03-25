@@ -15,7 +15,9 @@
     "build": "webpack --progress --mode=production",
     "heroku-postbuild": "npm run build",
     "lint": "eslint src --ext .js,.jsx",
-    "lint-fix": "yarn lint --fix"
+    "lint-fix": "yarn lint --fix",
+    "stylelint": "stylelint \"./src/styles/**/*.css\"",
+    "stylelint-fix": "stylelint --fix \"./src/styles/**/*.css\""
   },
   "dependencies": {
     "@babel/core": "^7.8.7",

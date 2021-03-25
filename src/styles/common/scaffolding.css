@@ -14,9 +14,9 @@ body {
   height: 100%;
   color: var(--color-text);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--font-family-text);
-  line-height: 1.4;
+  line-height: 1.5;
   background-color: var(--color-bg-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,10 +26,16 @@ body {
   }
 }
 
+#app-root {
+  height: 100%;
+  min-height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
 
+/* stylelint-disable no-descending-specificity */
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -57,7 +63,6 @@ ul > li {
   list-style: none;
 }
 
-/* noinspection Stylelint */
 a,
 a:focus,
 a:active,
@@ -88,7 +93,6 @@ p {
   margin: 1.5em 0;
 }
 
-/* noinspection Stylelint */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   margin: 0;
@@ -111,3 +115,4 @@ select:-moz-focusring {
 input::-ms-clear {
   display: none;
 }
+/* stylelint-enable */
