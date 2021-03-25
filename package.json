@@ -13,7 +13,9 @@
     "dev": "webpack-dev-server --progress --mode=development",
     "dev:debug": "webpack-dev-server --progress --mode=development --env.devDebug=true",
     "build": "webpack --progress --mode=production",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint-fix": "yarn lint --fix"
   },
   "dependencies": {
     "@babel/core": "^7.8.7",
