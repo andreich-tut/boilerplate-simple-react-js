@@ -78,6 +78,7 @@
     "react/jsx-curly-newline": 0,
     "react/no-children-prop": 0,
     "react/prop-types": 0,
+    "react/no-array-index-key": 0,
     "spaced-comment": 0,
     "operator-linebreak": 0,
     "comma-dangle": 0
