@@ -16,8 +16,8 @@
     "heroku-postbuild": "npm run build",
     "lint": "eslint src --ext .js,.jsx",
     "lint-fix": "yarn lint --fix",
-    "stylelint": "stylelint \"./src/styles/**/*.css\"",
-    "stylelint-fix": "stylelint --fix \"./src/styles/**/*.css\""
+    "stylelint": "stylelint \"./src/{styles,components}/**/*.css\"",
+    "stylelint-fix": "stylelint --fix \"./src/{styles,components}/**/*.css\""
   },
   "dependencies": {
     "@babel/core": "^7.8.7",
