@@ -18,7 +18,9 @@ module.exports = (isDev, buildEnv) => {
     new webpack.DefinePlugin({
       'process.env': { ...buildEnv },
     }),
-    new DotenvWebpack(),
+    new DotenvWebpack({
+      systemvars: true
+    }),
   ];
 
   if (buildEnv.IS_DEBUG) {
